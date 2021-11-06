@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Zen Old Mincho", serif;
+}
+
+body {
+  background: #3d3d3d;
+  background: linear-gradient(183deg, #e2e2e2 0%, #252433 100%);
+}
+
+.redondear {
+  border-radius: 1.5rem;
+}
+
+/*
+ESTILOS BARRA DE NAVEGACION
+*/
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-personal {
+  background: #5f2626;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("/img/ico/palomilla-ico.ico");
+}
+
+/*
+ESTILOS FONDOS PERSONALIZADOS
+*/
+.bg-claro {
+  background-color: #c4c4c4;
+}
+
+
+/*
+BOTONES PERSONALIZADOS
+*/
+.boton.cuatro::after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	background: none;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transition: .3s ease-in-out all;
+	border-radius: 100px;
+	transform-origin: center;
+}
+
+.boton.cuatro:hover {
+  background: #5f2626;
+	 
+}
+
+
+
+
+/* ESTILO GALERIA */ 
+.titulo {
+  font-size: 55px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+.galeria img {
+  box-shadow: 0 8px 10px -4px rgba(41, 42, 51, 0.6);
+  border-radius: 15px;
+}
+
+.materialbox-caption {
+  bottom: 30px;
+  right: 0;
+  width: 40%;
+  height: auto;
+  padding: 10px;
+  margin: auto;
+  background: rgba(46, 48, 53, 0.651);
+  box-shadow: 5px 5px rgba(56, 57, 61, 0);
+  font-size: 20px;
+  color: #fff;
+  line-height: 28px;
+}
+
+.galeria .col {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px){
+  .materialbox-caption {
+       width: 90%;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .materialbox-caption {
+       width: 70%;
+  }
+}
+
